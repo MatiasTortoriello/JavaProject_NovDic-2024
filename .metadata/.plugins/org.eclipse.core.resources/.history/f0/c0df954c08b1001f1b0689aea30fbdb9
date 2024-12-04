@@ -1,0 +1,17 @@
+package com.coderhouse.mascotas;
+
+public class Mascota {
+	String nombre;
+	String raza;
+	String color;
+	String tamanio;
+	Integer edad;
+	
+	public void caminar() {
+		System.out.println("El perro está caminando");
+	}
+	
+	public void comer() {
+		System.out.println("El perro está comiendo");
+	}
+}

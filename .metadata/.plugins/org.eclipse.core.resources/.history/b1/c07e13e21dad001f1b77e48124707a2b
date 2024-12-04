@@ -1,0 +1,25 @@
+package com.coderhouse.objetos;
+
+public class Perro {
+	
+	//Variables de instancia o Atributos del objeto
+	String nombre;
+	String raza;
+	String color;
+	String tamanio;
+	Integer edad;
+	
+	//Métodos
+	public void ladrar(){
+		System.out.println("El perro está ladrando");
+	}
+	
+	public void caminar() {
+		System.out.println("El perro está caminando");
+	}
+	
+	public void comer() {
+		System.out.println("El perro está comiendo");
+	}
+
+}
