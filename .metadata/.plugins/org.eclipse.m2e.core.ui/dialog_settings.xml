@@ -44,10 +44,12 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="com.coderhouse"/>
+			<item value="clase-01"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="clase-00"/>
 			<item value="clase-05"/>
 		</list>
 		<list key="projectNameTemplate">
