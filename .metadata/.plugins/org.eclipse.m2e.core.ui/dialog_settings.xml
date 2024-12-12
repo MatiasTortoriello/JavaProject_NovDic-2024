@@ -2,6 +2,8 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="G:\UNLaM\Curso Java CoderHouse\JavaProject_NovDic-2024\clase-01"/>
+			<item value="G:\UNLaM\Curso Java CoderHouse\JavaProject_NovDic-2024\clase-00"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -49,6 +51,9 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="clase-06"/>
+			<item value="clase-03"/>
+			<item value="clase-01"/>
 			<item value="clase-00"/>
 			<item value="clase-05"/>
 		</list>
