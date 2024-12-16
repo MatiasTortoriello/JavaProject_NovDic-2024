@@ -74,7 +74,6 @@ INDEX VERSION 1.134+G:\UNLaM\Curso Java CoderHouse\JavaProject_NovDic-2024\.meta
 3177318827.index
 1655991470.index
 1797963643.index
-3605937418.index
 909890580.index
 2404069122.index
 286315239.index

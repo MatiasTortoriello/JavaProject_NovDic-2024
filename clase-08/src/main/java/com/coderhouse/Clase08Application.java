@@ -26,7 +26,8 @@ public class Clase08Application implements CommandLineRunner {
 			//Clientes
 			Cliente cliente1 = new Cliente("Matias", "Tortoriello", 35533516, "Juncal 844");
 			Cliente cliente2 = new Cliente("Alejandro", "Di Stefano", 27037032, "Calle Falsa 123");
-			Cliente cliente3 = new Cliente("Ysela", "Creyó", 1234567, "Direccion Sinnumero" );
+			Cliente cliente3 = new Cliente("Ysela", "Creyó", 1234567, "Direccion SinNumero" );
+			
 			
 			
 			
