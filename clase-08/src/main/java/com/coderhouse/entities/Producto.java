@@ -39,13 +39,13 @@ public class Producto {
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(
 				name = "Venta", joinColumns = @JoinColumn(name = "producto_id"),
-				inverseJoinColumns = @JoinColumn(name = "cliente_id"))
+				inverseJoinColumns = @JoinColumn(name = "cliente_id")
+			   )
 	
 	private List<Cliente> clientes = new ArrayList<>();
 
 	public Producto() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Long getId() {
