@@ -17,15 +17,18 @@ public class Clase08Application implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		try {
-			
+			//Productos
 			Producto producto1 = new Producto("Teclado Gamer", "Logitech", 200.00);
 			Producto producto2 = new Producto("Auriculares", "RedDragon", 350.00);
 			Producto producto3 = new Producto("Mouse Gamer", "Razer", 50.00);
 			
-			
+		
+			//Clientes
 			Cliente cliente1 = new Cliente("Matias", "Tortoriello", 35533516, "Juncal 844");
 			Cliente cliente2 = new Cliente("Alejandro", "Di Stefano", 27037032, "Calle Falsa 123");
 			Cliente cliente3 = new Cliente("Ysela", "Creyó", 1234567, "Direccion Sinnumero" );
+			
+			
 			
 		} catch(Exception e) {
 			e.printStackTrace(System.err);
