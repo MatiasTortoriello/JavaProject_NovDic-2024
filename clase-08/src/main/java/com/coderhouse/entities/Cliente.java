@@ -36,7 +36,7 @@ public class Cliente {
 	private String direccion;
 	
 	
-	@ManyToMany(mappedBy = "clientes", fetch = FetchType.EAGER)
+	@ManyToMany(mappedBy = "cliente", fetch = FetchType.EAGER)
 	private List<Producto> productos = new ArrayList<>();
 	
 	private LocalDateTime createdAt;
