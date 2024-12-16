@@ -34,7 +34,7 @@ public class Producto {
 	private Integer stock;
 	
 	@Column(name = "Precio", nullable = false)	
-	private Float precio;
+	private Double precio;
 	
 	@ManyToMany(fetch = FetchType.EAGER)
 	@JoinTable(
@@ -47,6 +47,15 @@ public class Producto {
 	public Producto() {
 		super();
 	}
+	
+	public Producto(String nombre, String marca, Double precio) {
+		this();
+		this.nombre = nombre;
+		this.marca = marca;
+		this.precio = precio;
+	}
+	
+	
 
 	public Long getId() {
 		return id;
@@ -80,11 +89,11 @@ public class Producto {
 		this.stock = stock;
 	}
 
-	public Float getPrecio() {
+	public Double getPrecio() {
 		return precio;
 	}
 
-	public void setPrecio(Float precio) {
+	public void setPrecio(Double precio) {
 		this.precio = precio;
 	}
 

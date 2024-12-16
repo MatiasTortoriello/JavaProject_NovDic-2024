@@ -45,6 +45,15 @@ public class Cliente {
 		super();
 
 	}
+	
+	public Cliente(String nombre, String apellido, Integer dni, String direccion) {
+		this();
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.dni = dni;
+		this.direccion = direccion;
+
+	}
 
 	public Long getId() {
 		return id;
