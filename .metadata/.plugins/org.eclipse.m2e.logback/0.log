@@ -1978,3 +1978,4 @@
 2025-01-03 19:54:42,779 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
 2025-01-06 20:41:32,495 [Worker-6: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
 2025-01-06 20:41:34,634 [Worker-1: reload maven project] WARN  o.e.m.c.i.embedder.EclipseLogger - The artifact org.hibernate:hibernate-core:jar:6.4.4.Final has been relocated to org.hibernate.orm:hibernate-core:jar:6.4.4.Final
+2025-01-13 12:12:02,291 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.

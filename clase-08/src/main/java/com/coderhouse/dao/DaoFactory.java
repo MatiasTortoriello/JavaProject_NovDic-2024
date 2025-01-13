@@ -15,13 +15,17 @@ public class DaoFactory {
 	@PersistenceContext
 	private EntityManager entityManager;
 	
+	
 	@Transactional	
 	public void persistenciaClientes(Cliente cliente) {
 		entityManager.persist(cliente);
 	}
 	
+	
 	@Transactional	
 	public void persistenciaProductos(Producto producto) {
 		entityManager.persist(producto);
 	}
+	
+	
 }
