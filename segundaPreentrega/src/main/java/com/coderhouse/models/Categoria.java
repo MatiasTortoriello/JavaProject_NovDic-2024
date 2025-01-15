@@ -28,7 +28,7 @@ public class Categoria {
 	
 	@OneToMany(mappedBy= "categoria", fetch = FetchType.EAGER)
 	@JsonIgnore
-	private List<Curso> cursos = new ArrayList<>();
+	private List<Producto> cursos = new ArrayList<>();
 
 	
 	public Categoria() {
@@ -56,11 +56,11 @@ public class Categoria {
 		this.nombre = nombre;
 	}
 
-	public List<Curso> getCursos() {
+	public List<Producto> getCursos() {
 		return cursos;
 	}
 
-	public void setCursos(List<Curso> cursos) {
+	public void setCursos(List<Producto> cursos) {
 		this.cursos = cursos;
 	}
 
