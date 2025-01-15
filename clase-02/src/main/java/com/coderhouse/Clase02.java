@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Clase02 {
+	
 
 
 	public static void main(String[] args) {
@@ -53,6 +54,8 @@ public class Clase02 {
 		//System.out.println(random);
 		
 		int minimo = 1;
+		
+		
 		int maximo = 6;
 		
 		int rango = (maximo - minimo) + 1;

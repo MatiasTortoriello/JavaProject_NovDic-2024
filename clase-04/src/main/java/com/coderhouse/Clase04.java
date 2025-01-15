@@ -7,14 +7,11 @@ public class Clase04 {
 	public static void main(String[] args) {
 		
 		/*Perro primerPerro = new Perro();
-		
 		primerPerro.caminar();*/
-		
 		String[] nombres = new String[] {
 				"asd",
 				"sa"
 		};
-		
 	}
 		private static void imprimirListaDeNombres(String[] nombres1) {
 			for(String nombre : nombres1) {
