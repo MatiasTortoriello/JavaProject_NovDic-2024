@@ -18,7 +18,7 @@ import jakarta.persistence.Table;
 public class Alumno {
 
 	@Id // Primary Key
-	@GeneratedValue(strategy = GenerationType.IDENTITY) // Autoincremental
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Autoincrement
 	private Long id;	
 	
 	@Column(name = "Nombre")

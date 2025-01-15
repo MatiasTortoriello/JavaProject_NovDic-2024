@@ -38,7 +38,6 @@ public class CursoService {
 		return cursoRepository.save(curso);
 
 	}
-
 	public void deleteCurso(Long id) {
 		if (cursoRepository.existsById(id)) {
 			cursoRepository.deleteById(id);

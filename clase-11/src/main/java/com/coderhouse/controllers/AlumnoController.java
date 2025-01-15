@@ -18,6 +18,8 @@ import com.coderhouse.models.Alumno;
 import com.coderhouse.services.AlumnoService;
 
 @RestController
+
+
 @RequestMapping("/api/alumnos")
 public class AlumnoController {
 
@@ -28,9 +30,9 @@ public class AlumnoController {
 	public ResponseEntity<List<Alumno>> getAllAlumnos() {
 		try {
 			List<Alumno> alumnos = alumnoService.getAllAlumnos();
-			return ResponseEntity.ok(alumnos); // 200
+			return ResponseEntity.ok(alumnos); 
 		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // 500
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); 
 		}
 
 	}
@@ -39,11 +41,11 @@ public class AlumnoController {
 	public ResponseEntity<Alumno> getAlumnoById(@PathVariable Long id) {
 		try {
 			Alumno alumno = alumnoService.findById(id);
-			return ResponseEntity.ok(alumno); // 200
+			return ResponseEntity.ok(alumno); 
 		} catch (IllegalArgumentException e) {
-			return ResponseEntity.notFound().build(); // 404
+			return ResponseEntity.notFound().build(); 
 		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // 500
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); 
 		}
 	}
 
@@ -51,21 +53,22 @@ public class AlumnoController {
 	public ResponseEntity<Alumno> createAlumno(@RequestBody Alumno alumno) {
 		try {
 			Alumno alumnoCreado = alumnoService.saveAlumno(alumno);
-			return ResponseEntity.status(HttpStatus.CREATED).body(alumnoCreado); // 201 Created
+			return ResponseEntity.status(HttpStatus.CREATED).body(alumnoCreado); 
 		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // 500
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); 
 		}
 	}
 
+	
 	@PutMapping("/{id}")
 	public ResponseEntity<Alumno> updateAlumnoById(@PathVariable Long id, @RequestBody Alumno alumnoModificado) {
 		try {
 			Alumno updateAlumno = alumnoService.updateAlumnoById(id, alumnoModificado);
 			return ResponseEntity.ok(updateAlumno);
 		} catch (IllegalArgumentException e) {
-			return ResponseEntity.notFound().build(); // 404
+			return ResponseEntity.notFound().build();
 		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // 500
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); 
 		}
 
 	}
@@ -74,13 +77,13 @@ public class AlumnoController {
 	public ResponseEntity<Void> deteAlumnoById(@PathVariable Long id) {
 		try {
 			alumnoService.deleteAlumnoById(id);
-			return ResponseEntity.noContent().build(); // 204
+			return ResponseEntity.noContent().build(); 
 
 		} catch (IllegalArgumentException e) {
-			return ResponseEntity.notFound().build(); // 404
+			return ResponseEntity.notFound().build(); 
 
 		} catch (Exception e) {
-			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); // 500
+			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build(); 
 		}
 	}
 

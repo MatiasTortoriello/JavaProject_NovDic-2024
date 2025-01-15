@@ -34,6 +34,7 @@ public class AlumnoService {
 	}
 
 	
+	
 	@Transactional
 	public Alumno updateAlumnoById(Long id, Alumno alumnoDetails) {
 		Alumno alumno = alumnoRepository.findById(id)
