@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "66a53385-fbbf-46c7-b4a3-39c5956cc33f",
+		"name": "Categorias",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30958129",
+		"_collection_link": "https://marce9.postman.co/workspace/1ff25444-65f9-4b3d-9dba-086973ed8102/collection/30958129-66a53385-fbbf-46c7-b4a3-39c5956cc33f?action=share&source=collection_link&creator=30958129"
+	},
+	"item": [
+		{
+			"name": "getAllCategorias",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "getCategoriaById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/categorias/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"categorias",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createCategoria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"PHP\",\r\n    \"categoria\": {\r\n        \"id\": 2,\r\n        \"nombre\": \"Programación Backend\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/cursos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cursos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

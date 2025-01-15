@@ -1,0 +1,78 @@
+{
+	"info": {
+		"_postman_id": "4225602b-3446-4e2a-88a9-460bece6ba3a",
+		"name": "Alumnos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30958129",
+		"_collection_link": "https://marce9.postman.co/workspace/1ff25444-65f9-4b3d-9dba-086973ed8102/collection/30958129-4225602b-3446-4e2a-88a9-460bece6ba3a?action=share&source=collection_link&creator=30958129"
+	},
+	"item": [
+		{
+			"name": "getAllAlumnos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/alumnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAlumnoById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/alumnos/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alumnos",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createAlumno",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"nombre\": \"Martin\",\r\n        \"apellido\": \"Carabajal\",\r\n        \"dni\": 55555555,\r\n        \"legajo\": \"1005\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/alumnos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"alumnos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
